@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.container{
+    width: 100%;
+    max-width: 1248px;
+    padding: 0 16px;
+    margin: auto;
+}
+
+/* header start */
+
+.header{
+    width: 100%;
+    height: 100vh;
+    border: 1px solid red;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.349),rgba(0,0,0.349)), url(../img/orqa-fon.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header__navbar{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    padding: 12px 0;
+}
+.header__img{
+    width: 60px;
+}
+.header__collection{
+    display: flex;
+    gap: 50px;
+    font-size: 18px;
+}
+.header__item{
+    list-style: none;
+}
+.header__item a{
+    color: #fff;
+    text-decoration: none;
+}
+.content{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content h1{
+    color: #fff;
+    font-size: 60px;
+}
+.content h1:after{
+    content: "";
+    width: 100%;
+    height: 0px;
+    display: block;
+    background: #fa4659;
+    margin-top: 10px;
+
+}
+.content h1:hover::after{
+    height: 4px;
+    transition: 0.5s;
+}
+.header__item a:after{
+    content: "";
+    width: 100%;
+    height: 0px;
+    display: block;
+    background: #fa4659;
+    margin-top: 10px;
+
+}
+.header__item a:hover::after{
+    height: 4px;
+    transition: 0.5s;
+}
